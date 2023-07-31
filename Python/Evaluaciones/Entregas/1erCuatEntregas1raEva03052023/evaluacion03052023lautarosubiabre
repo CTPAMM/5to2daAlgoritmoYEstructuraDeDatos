@@ -1,0 +1,47 @@
+# Evaluacion del 03/05/2023
+# lautaro subiabre
+# 5°2
+
+# 1° programa 
+#imprima en pantalla un menu de 4 opcioes a eleccion.
+
+print("*****equipamiento gimnasio*****")
+print("1_ mancuernas")
+print("2_ barras ")
+print("3_ straps")
+print("4_ prensa")
+print("*****************")
+
+# 2° programa 
+#ingrese por teclado 2 numeros e imprima por pantalla el resultado de su muliplicacion.
+
+numero1 = int(input("introduzca el valor del primer numero: "))
+numero2 = int(input("introduzca el valor del segundo numero: "))
+
+print("la multiplicacion de los numeros es: ")
+print(numero1 * numero2)
+
+# 3° programa 
+#crear una lista con 4 elementos e imprimirla en pantalla.
+
+lista_juegos = ("fortnite", "call of duty", "mortal kombat", "fifa")
+
+print(lista_juegos)
+
+for auto in lista_juegos:
+    print(juegos)
+
+
+# 4° programa
+#crear una calculadora de perimetro del rectangulo:
+
+base = int(input("intoduzca el valor de la base: "))
+altura = int(input("introduzca el valor de la altura: "))
+
+#realiza el calculo
+respuesta = (base *2) * (altura *2)
+
+#imprime la respuesta 
+print("la superficie del rectangulo es: ")
+print (respuesta)
+
