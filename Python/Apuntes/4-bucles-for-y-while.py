@@ -9,8 +9,6 @@ marcas = ["fiat", "ford", "vw", "chevrolet"] # esto es una lista de marcas
 
 print("--LISTADO DE MARCAS---")
 
-# print(colores)
-
 # Bucle for para recorrer la lista de marcas.
 print("Resultado del bucle for")
 for marca in marcas:
