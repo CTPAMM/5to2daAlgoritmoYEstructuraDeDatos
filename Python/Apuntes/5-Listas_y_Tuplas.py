@@ -10,16 +10,18 @@
 
 # Declarar y definir las variables
 lista_marcas = ['Fiat', 'Ford', 'Chevrolet', 'Mercedez Benz']
+
+# Impresión de la lista
 print(lista_marcas)
 
-# Bucle FOR para recorrer los elementos de la lista
+# Bucle FOR para imprimir los elementos de la lista
 for marca in lista_marcas:
     print(marca)
 
 # Imprimir un elemento concreto de la lista
 print(f"El segundo elemento de la lista es: {lista_marcas[1]}")
 
-# Reemplazar un elemento de la lista
+# Reemplazar un elemento concreto de la lista
 lista_marcas[3] = 'Audi'
 print(lista_marcas)
 
@@ -37,4 +39,8 @@ print(lista_marcas)
 
 # Ordenar alfabeticamente la lista
 lista_marcas.sort()
+print(lista_marcas)
+
+# Vaciar la lista
+lista_marcas.clear()
 print(lista_marcas)
