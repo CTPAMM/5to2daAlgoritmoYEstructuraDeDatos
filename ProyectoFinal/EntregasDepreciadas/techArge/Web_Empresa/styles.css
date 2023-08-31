@@ -1,0 +1,36 @@
+/*estilos de la palabra del logo*/
+.logo{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*estilos generales*/
+body {
+    font-family:verdana,geneva,tahoma,sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/*estilos de la barra de nevegacion*/
+nav{
+    background-color: blue;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+/*estilos de los enlances de navegacion*/
+.nav-links {
+    list-style:none;
+    display: flex;
+}
+
+.nav-links li{ 
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration:none;
+    color:whrite;
+}
