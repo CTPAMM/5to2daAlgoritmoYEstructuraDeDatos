@@ -1,54 +1,57 @@
-/* Estilos de la palabra del logo */
-.logo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 /* Estilos generales */
+
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos de la barra de navegacion */
+
 nav {
-    background-color: blueviolet;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    align-items: center;
+  background-color: blueviolet;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
 }
 
-/* Estilos de los enlaces de navegacion */
 .nav-links {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .nav-links a {
-    text-decoration: none;
-    color: blue;
+  text-decoration: none;
+  color: blue;
 }
 
-.img-logo{
-    display: block;
-    width: 15%;
-    margin: left;
+/* Estilos del texto e imagen del logo */
+
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/*Estilos de la seccion hero*/
+.img-logo {
+  display: block;
+  width: 15%;
+  margin: left;
+}
+
+/* Estilos de la imágen de cabecera (hero) */
+
 #hero {
-    background-image: url('imagenes/hero.png');
-    background-size: cover;
-    color:_rgb(12, 11, 11);
-    text-align: center;
-    padding: 150px 0;
+  background-image: url("imagenes/hero.png");
+  background-size: cover;
+  color: _rgb(12, 11, 11);
+  text-align: center;
+  padding: 150px 0;
 }
 
 .hero-content {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
 }

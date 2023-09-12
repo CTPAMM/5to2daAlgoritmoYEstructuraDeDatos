@@ -26,3 +26,17 @@ if opción == 1:
 elif opción == 2:
     resta= numero1 - numero2
     print(f"el resultado de restar {numero1} y {numero2} es: {resta}")
+elif opción == 3:
+    multiplicación= numero1 * numero2
+    print(f"el resultado de multiplicar {numero1} y {numero2} es: {multiplicación}")
+elif opción == 4:
+    división= numero1 / numero2
+    print(f"el resultado de dividir {numero1} y {numero2} es: {división}")
+elif
+elif
+elif
+elif
+else:
+    print("ingresó una opción incorrecta. Vuelva a intetarlo")
+
+

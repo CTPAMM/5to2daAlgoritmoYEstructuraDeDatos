@@ -41,14 +41,14 @@ nav{
 
 /* Estilos de la sección de hero */
 #hero {
-    background-image: url("./imagenes/hero_empresa.avif");
+    background-image: url("./imagenes/hero.jpg");
     background-size: cover;
-    color:rgb(5, 5, 5);
+    color:rgb(255, 255, 255);
     text-align: center;
     padding: 150px 0;
 }
 
 .hero-content {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:x-large;
 }

@@ -37,20 +37,20 @@ nav {
 
 .img-logo {
     display: block;
-    width: 5%;
+    width: 7%;
     margin: left;
 }
 /*Estilos de la seccion hero */
 #hero {
-background-image:url('imagenes/hero.png');
+background-image:url('./52901.jpg');
 background-size: cover;
-color: rgb(12, 11, 11)
+color: rgb(24, 167, 233);
 text-align: center;
-padding: 150px 0;
+padding: 200px 0;
 
 }
 
 .hero-content {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    font-size: large;
+    font-family:'Courier New', Courier, monospace;
+    font-size:x-large;
 }
