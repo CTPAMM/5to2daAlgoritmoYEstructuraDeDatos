@@ -1,36 +1,88 @@
-/*estilos de la palabra del logo*/
-.logo{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 /*estilos generales*/
+
 body {
-    font-family:verdana,geneva,tahoma,sans-serif;
-    margin:0;
-    padding:0;
+  font-family: verdana, geneva, tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /*estilos de la barra de nevegacion*/
-nav{
-    background-color: blue;
-    color:white;
-    display:flex;
-    justify-content: space-between;
-    padding: 1rem;
-    align-items: center;
+nav {
+  background-color: rgb(90, 2, 107);
+  color: rgb(51, 8, 245);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
 }
 
-/*estilos de los enlances de navegacion*/
+/* Estilos de la barra de navegación (nav) */
+
 .nav-links {
-    list-style:none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
-
-.nav-links li{ 
-    margin-right: 20px;
+.nav-links li {
+  margin-right: 20px;
 }
-
 .nav-links a {
-    text-decoration:none;
-    color:whrite;
+  text-decoration: none;
+  color: blue;
+}
+
+/* Estilos del texto e imágen del logo */
+
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.img-logo {
+  display: block;
+  width: 15%;
+  margin: left;
+}
+
+/* Estilos de la imágen de cabecera (hero) */
+
+#hero {
+  background-image: url("imagenes/hero.png");
+  background-size: cover;
+  color: _rgb(12, 11, 11);
+  text-align: center;
+  padding: 150px 0;
+}
+
+.hero-content {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+/* Estilos de la sección Acerca de (about) */
+
+#about {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about-content {
+  height: 400px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.about-content .card {
+  background-color: #4e519e;
+  box-shadow: 0 4px 8px 0 rgba(11, 11, 11, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.about-content li {
+  margin-left: 10px;
+  list-style-position: outside;
 }

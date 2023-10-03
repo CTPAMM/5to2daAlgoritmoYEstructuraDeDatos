@@ -1,3 +1,18 @@
+# *******************************************************************************
+# Empresa: OvniOn
+#
+# Aplicación: Calculadora de 6 operaciones
+#
+# Destinado a: personas de todas las edades y niveles.
+#
+# Descripción del funcionamiento:
+#   Muestra opciones de operaciones y solicita al usuario que ingrese
+#   una opcion. Entonces permite realizar esa operación con los números
+#   elegidos por el usuario y luego informa el resultado.
+# *******************************************************************************
+
+import math
+
 # Calculadora para realizar operaciones matemáticas (6)
 
 while True:
@@ -16,22 +31,29 @@ while True:
 
     opcion = int(input("Ingrese una opción de operación: "))
 
-# Comienza la lógica del programa.
+    # Comienza la lógica del programa.
 
-print("************* Inicia aplicación *************")
+    print("************* Inicia aplicación *************")
 
-numero1 = input("Ingrese el primer número: ")
-numero2 = input("Ingrese el segundo número: ")
+    if opcion == 1:
+        numero1 = int(input("Ingrese el primer número: "))
+        numero2 = int(input("Ingrese el segundo número: "))
+        suma = numero1 + numero2
+        print(f"El resultado de sumar {numero1} y {numero2} es: {suma}")
+    elif opcion == 2:
+        numero1 = int(input("Ingrese el primer número: "))
+        numero2 = int(input("Ingrese el segundo número: "))
+        resta = numero1 ** numero2
+        print(f"El resultado de restar {numero1} y {numero2} es: {resta}")
 
-if opcion == 1:
-    suma = numero1 + numero2
-    print(f"El resultado de sumar {numero1} y {numero2} es: {suma}")
-elif opcion == 2:
-    resta = numero1 ** numero2
-    print(f"El resultado de restar {numero1} y {numero2} es: {resta}")
-elif
-elif
-elif
-elif
-else:
-    print("Ingresó una opción incorrecta. Vuelvalo a intentar.")    
+
+
+    elif opcion == 6:
+        numero1 = int(input("Ingrese el primer número: "))
+        radicacion = math.sqrt(numero1)
+        print(f"El resultado de la raiz cuadrada de {numero1} es: {radicacion}")
+    
+    
+    
+    else:
+        print("Ingresó una opción incorrecta. Vuelvalo a intentar.")    
