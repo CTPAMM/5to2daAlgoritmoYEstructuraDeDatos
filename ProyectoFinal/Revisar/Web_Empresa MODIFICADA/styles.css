@@ -1,0 +1,170 @@
+/*  Estilos de la palabra del logo */
+
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: blueviolet;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+/* Estilos de los enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.img-logo {
+    display: block;
+    width: 7%;
+    margin: left;
+}
+/*Estilos de la seccion hero */
+#hero {
+background-image:url('./imagenes/52901.jpg');
+background-size: cover;
+color: rgb(24, 167, 233);
+text-align: center;
+padding: 250px 0;
+
+}
+
+.hero-content {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-large;
+} 
+
+/* Estilos de la sección Acerca de */
+#about {
+    padding: 80px 0;
+    text-align: center;
+    background-color:slategray;
+   
+}
+
+.about-content {
+    height: 400px;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+
+}
+
+.about-content .card {
+    background-color:blueviolet;
+    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+    max-width: 400px;
+    margin: auto;
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.about-content li {
+    margin-left: 10px;
+    list-style-position:outside;
+}
+
+.button{
+    display: none;
+  }
+
+  .svg{
+    width:2em;
+    height:2em;
+    fill:rgb(14, 14, 14);
+  }
+
+  svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+  }
+
+  .ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+  }
+
+@media screen and (max-width:480px){
+    .logo{
+        display: none;
+    }
+     
+    .img-logo{
+        width: 20%;
+        margin: left;
+    }
+    .button{
+      display: block;
+      cursor: pointer;
+    }
+   
+    .nav-links{
+      width:100%;
+      height:0;
+      pointer-events: none;
+      overflow: hidden;
+      transition: all .5s ease;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links.activo{
+      display: block;
+      height:50vh;
+      pointer-events: auto;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+    }
+    .ul{
+      flex-direction: column;
+  
+    
+    }
+    .li{
+      margin: 1rem 0;
+      
+    }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .services-content {
+      display: flex;
+      flex-direction: column;
+  }
+  }

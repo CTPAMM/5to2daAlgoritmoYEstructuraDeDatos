@@ -31,17 +31,3 @@ ctaButton.addEventListener("mouseenter", function () {
 ctaButton.addEventListener("mouseleave", function () {
   ctaButton.style.backgroundColor = "#FF5733";
 });
-
-/* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
-const button = document.querySelector('.button')
-const nav    = document.querySelector('.nav-links')
-
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-});
-
-/* jQuery : Enlazar jQuery*/
-/* $('.button').on('click',()=>{
-    $('.nav').toggleClass('activo')
-}) */
-
