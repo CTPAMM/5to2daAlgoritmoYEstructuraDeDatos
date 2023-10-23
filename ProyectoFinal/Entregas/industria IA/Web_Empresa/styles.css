@@ -9,8 +9,8 @@ body {
 /* Estilos de la barra de navegacion */
 
 nav {
-  background-color: blueviolet;
-  color: black;
+  background-color: black;
+  color: blue;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -44,16 +44,18 @@ nav {
 /* Estilos de la imágen de cabecera (hero) */
 
 #hero {
-  background-image: url("imagenes/hero.png");
+  background-image: url("imagenes/hero.jfif");
   background-size: cover;
   color: _rgb(12, 11, 11);
   text-align: center;
-  padding: 150px 0;
+  padding: 200px 20px 100px 0;
 }
 
 .hero-content {
   font-family: "Times New Roman", Times, serif;
   font-size: large;
+
+  
 }
 
 /* Estilos de la sección Acerca de */
@@ -154,4 +156,54 @@ nav {
 .back-to-top:hover {
   background-color: #FF8C5A;
   transform: scale(1.05);
+}
+
+@media screen and (max-width:480px){
+  .logo{
+      display: none;
+  }
+   
+  .img-logo{
+      width: 20%;
+      margin: left;
+  }
+  .button{
+    display: block;
+    cursor: pointer;
+  }
+ 
+  .nav-links{
+    width:100%;
+    height:0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all .5s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links.activo{
+    display: block;
+    height:50vh;
+    pointer-events: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ul{
+    flex-direction: column;
+
+  
+  }
+  .li{
+    margin: 1rem 0;
+    
+  }
+  .about-content {
+      display: flex;
+      flex-direction: column;
+  }
 }

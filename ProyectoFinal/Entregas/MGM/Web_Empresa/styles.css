@@ -79,7 +79,7 @@ ul{
 }
 
 .about-content .card {
-  background-color: aqua;
+  background-color: rgb(255, 0, 106);
   box-shadow: 0 4px 8px rgb(rgb(0, 140, 255), rgb(0, 117, 117), rgb(47, 0, 255));
   max-width: 400px;
   margin: auto;
@@ -238,4 +238,9 @@ ul{
     flex-direction: column;
   }
 }
-
+div{
+  border-radius: 20%;
+}
+h2,p {
+  color:white;
+}
