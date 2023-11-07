@@ -60,6 +60,7 @@ ul {
 .hero-content {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: large;
+  
 }
 
 /* Estilos de la sección Acerca de (about) */
@@ -107,7 +108,7 @@ ul {
 }
 
 .services-content .card {
-  background-color: #ffffff;
+  background-color: #9453b9;
   box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.2);
   max-width: 400px;
   margin: auto;
@@ -144,9 +145,10 @@ ul {
 
 /* Estilos de la sección "Conoce al Equipo" */
 #team {
-  background-color: #f9f9f9;
+  background-color: #7ec27e;
   padding: 80px 0;
   text-align: center;
+  height: 800px;
 }
 
 /* Three columns side by side */
@@ -158,21 +160,19 @@ ul {
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .team-column {
-    width: 100%;
-    display: block;
-  }
-}
+
 
 /* Add some shadows to create a card effect */
 .team-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(245, 245, 245, 0.2);
+  background-color: #52c26a;
 }
 
 /* Some left and right padding inside the container */
 .team-container {
   padding: 0 16px;
+  
+
 }
 
 /* Clear floats */
@@ -184,7 +184,7 @@ ul {
 }
 
 .team-title {
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
 .team-button {
@@ -192,15 +192,17 @@ ul {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #000;
   text-align: center;
+  
   cursor: pointer;
-  width: 100%;
+  width: 70%;
 }
 
 .team-button:hover {
   background-color: #555;
+  text-align: center;
 }
 
 .team-img {
@@ -245,8 +247,8 @@ ul {
 
 /* Estilos de la sección Footer */
 #footer {
-  background-color: #333;
-  color: white;
+  background-color: #387467;
+  color: rgb(69, 153, 69);
   text-align: center;
   padding: 80px 0;
 }
@@ -308,6 +310,15 @@ svg {
   align-items: center;
 }
 
+div {
+  border-radius: 20%;
+}
+h2,
+p {
+  color: white;
+}
+
+
 @media screen and (max-width: 480px) {
   .logo {
     display: none;
@@ -356,12 +367,18 @@ svg {
   .services-content {
     display: flex;
     flex-direction: column;
+    height: 900px;
   }
-}
-div {
-  border-radius: 20%;
-}
-h2,
-p {
-  color: white;
+  .services-content .card{
+ min-width: 400px;
+  }
+
+  .about-content .card {
+  
+ margin: 10px 0 0 0; 
+  }
+  .team-row{
+  display: flex;
+  flex-direction: column;
+  }
 }

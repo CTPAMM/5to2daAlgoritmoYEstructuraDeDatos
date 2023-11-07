@@ -349,5 +349,9 @@ svg {
   .services-content {
     display: flex;
     flex-direction: column;
+    height: 800px;
   }
+  .services-content .card {
+ 
+    min-width: 400px;   
 }

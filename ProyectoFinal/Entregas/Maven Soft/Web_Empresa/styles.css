@@ -77,7 +77,7 @@ nav {
 }
 
 .about-content .card {
-  background-color: rgb(32, 32, 218);
+  background-color:  rgb(153, 2, 190);
   box-shadow: 0 4px 8px 0 rgb(12, 11, 11);
   max-width: 400px;
   margin: auto;
@@ -352,9 +352,20 @@ svg {
   .about-content {
     display: flex;
     flex-direction: column;
+    margin: 10px 10px 10px 10px;
   }
   .services-content {
     display: flex;
     flex-direction: column;
+    height: 800px;
+  }
+  .services-content .card {
+    min-width: 400px;
+    margin: auto;
+  }
+  .about-content .card {
+    max-width: 400px;
+    margin: auto;
+    margin: 7px 0 0 7px;
   }
 }

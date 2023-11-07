@@ -45,7 +45,7 @@ nav {
 /* Estilos de la imágen de cabecera (hero) */
 
 #hero {
-  background-image: url("imagenes/hero.png");
+  background-image: url("imagenes/descarga.jpg");
   background-size: cover;
   color: _rgb(12, 11, 11);
   text-align: center;
@@ -100,6 +100,7 @@ nav {
   gap: 10px;
   padding: 10px;
   grid-template-columns: auto auto auto;
+  
 }
 
 .services-content .card {
@@ -109,6 +110,7 @@ nav {
   margin: auto;
   text-align: center;
   font-family: arial;
+  
 }
 
 .services-content li {
@@ -121,6 +123,7 @@ nav {
   background-color: #f9f9f9;
   padding: 80px 0;
   text-align: center;
+ 
 }
 
 /* Three columns side by side */
@@ -129,6 +132,7 @@ nav {
   width: 30%;
   margin-bottom: 16px;
   padding: 0 8px;
+   
 }
 
 /* Display the columns below each other instead of side by side on small screens */

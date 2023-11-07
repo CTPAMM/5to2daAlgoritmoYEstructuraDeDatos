@@ -1,0 +1,333 @@
+/* Estilos generales */
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos de la barra de navegacion */
+
+nav {
+  background-color: black;
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Estilos del texto e imagen del logo */
+
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.img-logo {
+  display: block;
+  width: 15%;
+  margin: left;
+}
+
+/* Estilos de la imágen de cabecera (hero) */
+
+#hero {
+  background-image: url("imagenes/fondo.jpg");
+  background-size: cover;
+  color: _rgb(12, 11, 11);
+  text-align: center;
+  padding: 200px 20px 100px 0;
+}
+
+.hero-content {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+/* Estilos de la sección Acerca de */
+#about {
+  padding: 80px 0;
+  text-align: center;
+  background-color: slategray;
+}
+
+.about-content {
+  height: 400px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.about-content .card {
+  background-color: blueviolet;
+  box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about-content li {
+  margin-left: 10px;
+  list-style-position: outside;
+}
+
+/* Estilos de la sección Servicios */
+#services {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #4e519e;
+}
+
+.services-content {
+  height: 300px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.services-content .card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.services-content li {
+  margin-left: 10px;
+  list-style-position: outside;
+}
+
+/* Estilos de la sección "Conoce al Equipo" */
+#team {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Three columns side by side */
+.team-column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .team-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.team-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.team-container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.team-container::after,
+.team-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.team-title {
+  color: grey;
+}
+
+.team-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.team-button:hover {
+  background-color: #555;
+}
+
+.team-img {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+
+/* Estilos de la sección Slider de marcas */
+#slider {
+  width: 75vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
+}
+
+.slide {
+  width: 200px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
+
+/* Estilos de la sección Footer */
+#footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.contact-email {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff5733;
+  text-decoration: none;
+}
+
+.contact-email:hover {
+  color: #ff8c5a;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #d24726;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.img-services {
+  display: block;
+  width: 40%;
+  margin: auto;
+}
+
+/* Estilos del botón "Volver al Inicio" */
+
+.back-to-top {
+  display: inline-block;
+  background-color: #ff5733;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  background-color: #ff8c5a;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+
+  .img-logo {
+    width: 20%;
+    margin: left;
+  }
+  .button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links.activo {
+    display: block;
+    height: 50vh;
+    pointer-events: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ul {
+    flex-direction: column;
+  }
+  .li {
+    margin: 1rem 0;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  .services-content .card{
+ min-width: 400px;
+}
+  }

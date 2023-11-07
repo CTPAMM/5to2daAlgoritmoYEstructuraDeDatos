@@ -1,3 +1,10 @@
+/* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
+const button = document.querySelector('.button')
+const nav    = document.querySelector('.nav-links')
+
+button.addEventListener('click',()=>{
+    nav.classList.toggle('activo')
+});
 // Desplazamiento suave al hacer clic en los enlaces de navegación
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -33,15 +40,6 @@ ctaButton.addEventListener("mouseleave", function () {
 });
 
 
-/* Cuando hago CLICK .button, .nav TOGGLE 'activo' */
-const button = document.querySelector('.button')
-const nav    = document.querySelector('.nav-links')
 
-button.addEventListener('click',()=>{
-    nav.classList.toggle('activo')
-});
 
-/* jQuery : Enlazar jQuery*/
-/* $('.button').on('click',()=>{
-    $('.nav').toggleClass('activo')
-}) */
+

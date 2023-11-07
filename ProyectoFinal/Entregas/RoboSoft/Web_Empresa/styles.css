@@ -85,7 +85,7 @@ nav {
 
 .about-content li {
   margin-left: 10px;
-  list-style-position: outside;
+  text-align: center;
 }
 
 /* Estilos de la sección Servicios */
@@ -107,6 +107,7 @@ nav {
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(6, 6, 6, 0.2);
   max-width: 400px;
+  min-height: 250px;
   margin: auto;
   text-align: center;
   font-family: arial;
@@ -315,7 +316,7 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    align-items: center;
+    align-items: cen0ter;
     flex-direction: column;
   }
   .ul {
@@ -327,5 +328,14 @@ nav {
   .about-content {
     display: flex;
     flex-direction: column;
+  }
+
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+  }
+  .services-content .card{
+    min-width: 400px;   
   }
 }
